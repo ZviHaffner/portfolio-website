@@ -7,7 +7,7 @@ import Home from "./components/Home";
 
 function App() {
   return (
-    <>
+    <div>
       <Nav />
       <Routes>
         {/* <Route path="*" element={<ErrorPage />} /> */}
@@ -15,7 +15,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
