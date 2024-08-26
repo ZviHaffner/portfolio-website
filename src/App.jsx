@@ -4,17 +4,21 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Nav />
-      <Routes>
-        {/* <Route path="*" element={<ErrorPage />} /> */}
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
+      <div className="flex-grow">
+        <Routes>
+          {/* <Route path="*" element={<ErrorPage />} /> */}
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </div>
+      <Footer />
     </div>
   );
 }
