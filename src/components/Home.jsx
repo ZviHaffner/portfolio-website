@@ -1,15 +1,25 @@
 const Home = () => {
   return (
-    <div className="border-2 border-blue-500 bg-blue-50 px-10 py-5">
-      <h1>Hello I'm Zvi Haffner</h1>
-      <h2>Junior Software Engineer</h2>
-      <p>
-        I am a passionate Full-Stack engineer focussed on Front-End, with a knack for turning complex
-        problems into elegant, efficient solutions. With expertise in
-        JavaScript, I specialise in developing robust applications that
-        prioritise both performance and user experience. Please explore my portfolio,
-        to see my projects and skills.
-      </p>
+    <div className="flex items-center px-60">
+      <div className="px-10 py-5">
+        <h1 className="text-green-700">
+          Hello I'm - <br />
+          <span className="text-blue-700">Zvi Haffner</span>
+        </h1>
+        <h2>Junior Software Engineer</h2>
+        <p className="text-xl">
+          I am a passionate Full-Stack engineer specialising in JavaScript and
+          Front-End development, with a knack for turning complex problems into
+          elegant, efficient solutions.
+          <br />
+          Please explore my portfolio, to see my projects and skills.
+        </p>
+      </div>
+      <img
+        src="/sftwr-engineer-at-desk.png"
+        alt="Software engineer working at desk"
+        width={400}
+      />
     </div>
   );
 };

@@ -3,7 +3,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-gray-300 py-5">
+    <footer className="bg-gray-800 text-gray-300 py-5 text-center">
       <div className="flex justify-between">
         <div className="flex gap-5 ml-5 my-auto">
           <div className="flex flex-col items-center hover:text-white">
