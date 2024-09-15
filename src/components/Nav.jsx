@@ -15,18 +15,18 @@ const Nav = () => {
 
       <ul className="list-none flex gap-5">
         <li>
-          <Link to={"/about"}>
+          <a href="#about">
             {"<"}
             <span className="nav_btn">About</span>
             {"/>"}
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to={"/projects"}>
+          <a href="#projects">
             {"<"}
             <span className="nav_btn">Projects</span>
             {"/>"}
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>

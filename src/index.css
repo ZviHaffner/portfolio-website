@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .nav {
-  @apply flex justify-between items-center py-3 px-28 text-white bg-gray-800 text-xl font-mono
+  @apply flex justify-between items-center py-3 lg:px-28 text-white bg-gray-800 text-xl font-mono
 }
 
 .nav_btn {

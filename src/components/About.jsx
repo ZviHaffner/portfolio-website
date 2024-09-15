@@ -4,7 +4,7 @@ const About = () => {
   const [showCv, setShowCv] = useState(false);
 
   return (
-    <div className="mx-60">
+    <div id="about" className="lg:px-60 bg-blue-50">
       <img
         src="profile-pic.png"
         alt=""

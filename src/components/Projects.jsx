@@ -7,7 +7,7 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState("NC News BE");
 
   return (
-    <div>
+    <div id="projects">
       <ProjectsNav selectedProject={selectedProject} setSelectedProject={setSelectedProject} projects={projects} />
       {Object.keys(projects).map((key) => {
         if (key === selectedProject) {
