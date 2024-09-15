@@ -3,22 +3,29 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <nav className="nav">
-      <p>
-        <Link to={"/"}>ZH</Link>
-      </p>
+      <Link to={"/"}>
+        <p className="flex gap-1">
+          {"<"}
+          <span className="text-green-500 hover:text-blue-500 hover:underline hover:underline-offset-2">
+            Zvi Haffner
+          </span>
+          {" />"}
+        </p>
+      </Link>
+
       <ul className="list-none flex gap-5">
         <li>
-          <Link to={"/about"} >
+          <Link to={"/about"}>
             {"<"}
             <span className="nav_btn">About</span>
-            {" />"}
+            {"/>"}
           </Link>
         </li>
         <li>
           <Link to={"/projects"}>
             {"<"}
             <span className="nav_btn">Projects</span>
-            {" />"}
+            {"/>"}
           </Link>
         </li>
       </ul>
