@@ -12,12 +12,11 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <Nav />
+      <Home/>
+      <About />
+      <Projects />
       <div className="flex-grow">
         <Routes>
-          {/* <Route path="*" element={<ErrorPage />} /> */}
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
         </Routes>
       </div>
       <Footer />
