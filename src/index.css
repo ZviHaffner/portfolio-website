@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .nav {
-  @apply flex justify-between px-10 py-10 mb-10 text-white bg-gray-800
+  @apply flex justify-between items-center py-3 px-10 text-white bg-gray-800 text-xl font-mono
 }
 
 .nav_btn {
-  @apply text-green-500 hover:text-blue-500 hover:underline hover:underline-offset-2 text-xl
+  @apply text-green-500 hover:text-blue-500 hover:underline hover:underline-offset-2 
 }
 
 h1 {
