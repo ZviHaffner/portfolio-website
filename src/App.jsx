@@ -1,4 +1,3 @@
-import { Route, Routes } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
@@ -12,13 +11,9 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <Nav />
-      <Home/>
+      <Home />
       <About />
       <Projects />
-      <div className="flex-grow">
-        <Routes>
-        </Routes>
-      </div>
       <Footer />
     </div>
   );
