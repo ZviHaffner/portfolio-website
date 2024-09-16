@@ -2,11 +2,11 @@ import GalleryCarousel from "./GalleryCarousel";
 
 const ProjectCard = ({ project, name }) => {
   return (
-    <div className="border-2 border-blue-500 bg-blue-50 rounded-md m-5">
+    <div className="m-5 lg:px-60">
       <h1>{name}</h1>
       {project.gallery ? <GalleryCarousel gallery={project.gallery} /> : null}
       {project.video ? (
-        <video src="/6026heroes.mp4" width="320" controls className="mx-auto" />
+        <video src="/6026heroes.mp4" width="320" controls className="mx-auto m-10" />
       ) : null}
       <h2>{project.subtitle}</h2>
       <br />
@@ -24,7 +24,7 @@ const ProjectCard = ({ project, name }) => {
         return (
           <p key={link}>
             {key}:{" "}
-            <a href={link} target="_blank" className="hover:text-blue-600">
+            <a href={link} target="_blank" className="text-blue-600 hover:underline">
               {link}
             </a>
           </p>
