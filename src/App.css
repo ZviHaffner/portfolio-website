@@ -1,4 +1,17 @@
-.slick-prev:before,
-.slick-next:before {
-  color: rgb(31 41 55 / var(--tw-bg-opacity));
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.green_button {
+  @apply border border-green-800 bg-green-50 p-2 rounded-sm hover:bg-green-100 font-semibold text-green-800
 }

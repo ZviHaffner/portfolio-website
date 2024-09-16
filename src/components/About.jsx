@@ -5,12 +5,13 @@ const About = () => {
 
   return (
     <div id="about" className="lg:px-60 bg-blue-50">
+      <h1 className="text-center m-5 text-green-700">{'<'}About{'/>'}</h1>
       <img
         src="profile-pic.png"
-        alt=""
+        alt="Portrait profile picture"
         width={300}
         height={300}
-        className="object-contain rounded-md mx-auto my-10"
+        className="object-contain rounded-lg mx-auto my-10 drop-shadow-lg"
       />
       <article className="text-xl">
         <p>
@@ -44,16 +45,18 @@ const About = () => {
           GitHub. Let’s connect and maybe even build something cool together!
         </p>
       </article>
-      <button
-        onClick={() => setShowCv(!showCv)}
-        className="border-2 border-green-500 bg-green-50 m-5 p-2 rounded-md"
-      >
-        {showCv ? "HIDE " : "SHOW "}CV
-      </button>
+      <div className="flex justify-center my-5">
+        <button
+          onClick={() => setShowCv(!showCv)}
+          className="green_button"
+        >
+          {showCv ? "HIDE " : "SHOW "}CV
+        </button>
+      </div>
       {showCv ? (
         <div
           style={{ width: "100%", height: "600px" }}
-          className="flex justify-center items-center mx-auto"
+          className="flex justify-center items-center mx-auto mb-5"
         >
           <embed
             src="/zvihaffner-cv.pdf"
