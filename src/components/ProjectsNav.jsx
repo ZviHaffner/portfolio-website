@@ -9,10 +9,10 @@ const ProjectsNav = ({ selectedProject, setSelectedProject, projects }) => {
 
           return (
             <li
-              className={`border-2 rounded-md p-2 m-5 cursor-pointer ${
+              className={`m-5 cursor-pointer ${
                 isSelected
-                  ? "border-green-700 bg-green-100"
-                  : "border-blue-500 bg-blue-50 hover:bg-green-50"
+                  ? "bg-blue-800 p-2 rounded-sm font-semibold text-white shadow-lg shadow-blue-900/50"
+                  : "blue_button"
               }`}
               onClick={() => setSelectedProject(project)}
               key={project}

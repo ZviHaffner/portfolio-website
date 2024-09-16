@@ -12,7 +12,7 @@ export default function GalleryCarousel({gallery}) {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto m-5">
+    <div className="w-full max-w-2xl mx-auto m-10">
       <Slider {...settings}>
         {gallery.map((image)=> {
           return (
