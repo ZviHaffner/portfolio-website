@@ -1,10 +1,10 @@
-import { RiScrollToBottomFill } from "react-icons/ri";
+import { FaAngleDoubleDown } from "react-icons/fa";
 
 const Home = () => {
   return (
       <div
         id="home"
-        className="lg:flex items-center lg:px-60 bg-green-50"
+        className="lg:flex items-center lg:px-60 bg-green-50 min-h-screen"
       >
         <div className="px-10 py-5">
           <h1 className="text-green-700">
@@ -25,6 +25,7 @@ const Home = () => {
           alt="Software engineer working at desk"
           width={400}
         />
+        <FaAngleDoubleDown className="absolute bottom-5 left-1/2 transform -translate-x-1/2 text-green-700 text-3xl animate-bounce" />
       </div>
   );
 };
