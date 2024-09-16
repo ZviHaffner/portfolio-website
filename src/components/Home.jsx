@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaAngleDoubleDown } from "react-icons/fa";
+import { FaAngleDoubleDown, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
   const [isAtTop, setIsAtTop] = useState(true);
@@ -38,6 +38,21 @@ const Home = () => {
           <br />
           Please explore my portfolio, to see my projects and skills.
         </p>
+        <div className="flex gap-5 my-5">
+          <div className="flex flex-col items-center text-blue-700 hover:text-green-700 transition-colors duration-300">
+            <a
+              href="https://www.linkedin.com/in/zvi-haffner-7697932a4/"
+              target="_blank"
+            >
+              <FaLinkedin size={32} />
+            </a>
+          </div>
+          <div className="flex flex-col items-center text-blue-700 hover:text-green-700 transition-colors duration-300">
+            <a href="https://github.com/ZviHaffner" target="_blank">
+              <FaGithub size={32} />
+            </a>
+          </div>
+        </div>
       </div>
       <img
         src="/sftwr-engineer-at-desk.png"
