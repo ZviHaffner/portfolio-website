@@ -11,7 +11,7 @@ const TechStack = () => {
         {Object.entries(techStackData.confident).map(
           ([key, ValueComponent]) => {
             return (
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center" key={key}>
                 <ValueComponent size={32} />
                 <span className="text-xs mt-2">{key}</span>
               </div>
@@ -24,7 +24,7 @@ const TechStack = () => {
         {Object.entries(techStackData.familiar).map(
           ([key, ValueComponent]) => {
             return (
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center" key={key}>
                 <ValueComponent size={32} />
                 <span className="text-xs mt-2">{key}</span>
               </div>
