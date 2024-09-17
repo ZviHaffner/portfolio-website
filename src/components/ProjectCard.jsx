@@ -6,7 +6,12 @@ const ProjectCard = ({ project, name }) => {
       <h1>{name}</h1>
       {project.gallery ? <GalleryCarousel gallery={project.gallery} /> : null}
       {project.video ? (
-        <video src="/6026heroes.mp4" width="320" controls className="mx-auto m-10" />
+        <video
+          src="/6026heroes.mp4"
+          width="320"
+          controls
+          className="mx-auto m-10"
+        />
       ) : null}
       <h2>{project.subtitle}</h2>
       <br />
@@ -22,12 +27,16 @@ const ProjectCard = ({ project, name }) => {
       {Object.keys(project.links).map((key) => {
         const link = project.links[key];
         return (
-          <p key={link}>
-            {key}:{" "}
-            <a href={link} target="_blank" className="text-blue-600 hover:underline">
+          <div key={link}>
+            <p>{key}: </p>
+            <a
+              href={link}
+              target="_blank"
+              className="text-blue-600 hover:underline"
+            >
               {link}
             </a>
-          </p>
+          </div>
         );
       })}
     </div>

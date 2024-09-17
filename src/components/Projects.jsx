@@ -7,7 +7,7 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState("NC News BE");
 
   return (
-    <div id="projects" className="bg-green-50 text-center text-xl">
+    <div id="projects" className="bg-green-50 text-center text-xl px-5">
       <h1 className="text-center m-5 text-blue-800">
         {"<"}Projects{"/>"}
       </h1>

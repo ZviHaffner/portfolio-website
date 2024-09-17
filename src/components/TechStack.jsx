@@ -7,11 +7,11 @@ const TechStack = () => {
         {"<"}Tech Stack{"/>"}
       </h2>
       <p className="text-center m-5 text-xl font-semibold">Confident With:</p>
-      <div className="flex justify-evenly">
+      <div className="flex flex-wrap justify-evenly">
         {Object.entries(techStackData.confident).map(
           ([key, ValueComponent]) => {
             return (
-              <div className="flex flex-col items-center" key={key}>
+              <div className="flex flex-col items-center m-2" key={key}>
                 <ValueComponent size={32} />
                 <span className="text-xs mt-2">{key}</span>
               </div>
@@ -20,11 +20,11 @@ const TechStack = () => {
         )}
       </div>
         <p className="text-center m-5 text-xl font-semibold">Familiar With:</p>
-      <div className="flex justify-evenly">
+      <div className="flex flex-wrap justify-evenly">
         {Object.entries(techStackData.familiar).map(
           ([key, ValueComponent]) => {
             return (
-              <div className="flex flex-col items-center" key={key}>
+              <div className="flex flex-col items-center m-2" key={key}>
                 <ValueComponent size={32} />
                 <span className="text-xs mt-2">{key}</span>
               </div>
