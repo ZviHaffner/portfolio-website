@@ -1,4 +1,5 @@
 import { useState } from "react";
+import TechStack from "./TechStack";
 
 const About = () => {
   const [showCv, setShowCv] = useState(false);
@@ -66,6 +67,7 @@ const About = () => {
           />
         </div>
       ) : null}
+      <TechStack/>
     </div>
   );
 };
