@@ -5,7 +5,7 @@ const About = () => {
   const [showCv, setShowCv] = useState(false);
 
   return (
-    <div id="about" className="lg:px-60 bg-blue-50">
+    <div id="about" className="lg:px-60 px-5 bg-blue-50">
       <h1 className="text-center m-5 text-green-700">{'<'}About{'/>'}</h1>
       <img
         src="profile-pic.png"
