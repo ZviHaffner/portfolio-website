@@ -4,7 +4,7 @@
 }
 
 .nav {
-  @apply flex justify-between items-center py-3 lg:px-28 text-white bg-blue-950 text-xl font-mono
+  @apply flex justify-between items-center py-3 lg:px-28 text-white bg-blue-950 text-xl font-mono px-5
 }
 
 .nav_btn {
