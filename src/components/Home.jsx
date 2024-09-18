@@ -61,7 +61,7 @@ const Home = () => {
       />
       {isAtTop && (
         <FaAngleDoubleDown
-          className="absolute bottom-5 left-1/2 text-green-700 animate-bounce"
+          className="absolute bottom-5 left-1/2 text-green-700 animate-bounce hidden xl:block"
           size={40}
         />
       )}
