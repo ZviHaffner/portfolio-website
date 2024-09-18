@@ -10,7 +10,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="nav">
+    <nav id="nav" className="nav">
       <Link to={"/"}>
         <p className="flex gap-1">
           {"<"}

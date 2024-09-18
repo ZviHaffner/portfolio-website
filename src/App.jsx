@@ -6,6 +6,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
+import BackToTop from "./components/BackToTop";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Projects />
       <Footer />
+      <BackToTop />
     </div>
   );
 }
