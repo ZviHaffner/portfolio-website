@@ -2,7 +2,7 @@ import techStackData from "../assets/techStackData";
 
 const TechStack = () => {
   return (
-    <div className="bg-green-50 p-5 mb-5 rounded-3xl shadow-lg text-blue-800">
+    <div className="bg-green-50 p-5 my-8 rounded-3xl shadow-lg text-blue-800">
       <h2 className="text-center">
         {"<"}Tech Stack{"/>"}
       </h2>

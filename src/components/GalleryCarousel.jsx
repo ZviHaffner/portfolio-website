@@ -1,27 +1,36 @@
 import Slider from "react-slick";
 
-export default function GalleryCarousel({gallery}) {
+export default function GalleryCarousel({ gallery }) {
   const settings = {
     dots: true,
+    arrows: true,
+    infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          dots: false,
+          arrows: false,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto m-10">
-      <Slider {...settings}>
-        {gallery.map((image)=> {
-          return (
-            <div key={image}>
-              <img src={image} alt="" />
-            </div>
-          )
-        })}
-      </Slider>
-    </div>
+    <Slider {...settings}>
+      {gallery.map((image) => (
+        <div key={image}>
+          <img
+            src={image}
+            alt=""
+            className="aspect-video object-contain mx-auto"
+          />
+        </div>
+      ))}
+    </Slider>
   );
 }

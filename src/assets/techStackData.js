@@ -18,6 +18,7 @@ const techStackData = {
     JavaScript: FaJsSquare,
     "Node.JS": FaNodeJs,
     React: FaReact,
+    "Next.js": RiNextjsLine,
     "React Native": FaReact,
     Postgresql: DiPostgresql,
     "Express.JS": SiExpress,
@@ -26,7 +27,6 @@ const techStackData = {
     TailwindCSS: RiTailwindCssFill,
   },
   familiar: {
-    "Next.js": RiNextjsLine,
     Firebase: RiFirebaseLine,
     MongoDB: SiMongodb,
   },
