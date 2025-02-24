@@ -55,6 +55,32 @@ const projects = {
         "https://northcoders.com/project-phase/trippackgo",
     },
   },
+  "Exhibition Curator": {
+    id: 4,
+    subtitle: "Web Application",
+    technologies: ["Next.js", "React", "HTML", "Tailwind CSS", "Axios"],
+    desc: "Exhibition Curator is a web application designed to help users explore, search, and curate virtual exhibitions from combined collections of antiquities and fine art. Developed using Next.js, it integrates third-party museum and university APIs to provide a seamless and interactive browsing experience. The platform includes advanced filtering and search functionalities, allowing users to discover and organise artworks into curated exhibitions. This project showcases my ability to work with APIs, dynamic data handling, and responsive UI design.",
+    gallery: [
+      "exhibition-curator-imgs/desktop/home.png",
+      "exhibition-curator-imgs/mobile/home.png",
+      "exhibition-curator-imgs/desktop/gallery-explorer.png",
+      "exhibition-curator-imgs/mobile/gallery-explorer.png",
+      "exhibition-curator-imgs/desktop/search-filter-and-results.png",
+      "exhibition-curator-imgs/mobile/search-filter-and-results.png",
+      "exhibition-curator-imgs/desktop/artwork-details.png",
+      "exhibition-curator-imgs/mobile/artwork-details.png",
+      "exhibition-curator-imgs/desktop/add-to-exhibition-pop-up.png",
+      "exhibition-curator-imgs/mobile/add-to-exhibition-pop-up.png",
+      "exhibition-curator-imgs/desktop/exhibitions.png",
+      "exhibition-curator-imgs/mobile/exhibitions.png",
+      "exhibition-curator-imgs/desktop/exhibition.png",
+      "exhibition-curator-imgs/mobile/exhibition.png",
+    ],
+    links: {
+      GitHub: "https://github.com/ZviHaffner/exhibition-curator",
+      "Hosted Website": "https://exhibition-curator-nine.vercel.app/",
+    },
+  },
 };
 
 export default projects;

@@ -10,7 +10,7 @@ import BackToTop from "./components/BackToTop";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col">
       <Nav />
       <Home />
       <About />

@@ -3,7 +3,7 @@ const ProjectsNav = ({ selectedProject, setSelectedProject, projects }) => {
 
   return (
     <nav>
-      <ul className="flex justify-center items-center text-base">
+      <ul className="w-fit my-8 mx-auto md:flex justify-center items-center text-base">
         {projectsArr.map((project) => {
           const isSelected = project === selectedProject;
 
